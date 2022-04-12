@@ -1,0 +1,11 @@
+font-family: 'Inconsolata', monospace;
+font-family: 'Jura', sans-serif;
+font-family: 'Yuji Boku', serif;
+font-family: 'Jura', sans-serif;
+font-family: 'Yuji Boku', serif;
+
+credit:
+bg1 <a href="http://www.freepik.com">Designed by coolvector / Freepik</a>
+bg4 <a href="http://www.freepik.com">Designed by coolvector / Freepik</a>
+bg5 <a href="http://www.freepik.com">Designed by coolvector / Freepik</a>
+bg6 <a href="http://www.freepik.com">Designed by Starline / Freepik</a>
