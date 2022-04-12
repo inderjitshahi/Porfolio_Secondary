@@ -691,9 +691,6 @@ animation:  evenImgAnime 4s 0.2s;
    width: 12.5rem; 
    height: 12.5rem; 
   }
-  .circle{
-    display: none;
-  }
   .service-text{
     font-size: 3rem;
   }
@@ -783,6 +780,9 @@ animation:  evenImgAnime 4s 0.2s;
 @media screen and (max-width: 550px) {
   html{
     font-size: 40%;
+  }
+  .circle{
+    display: none;
   }
 .main-circle img{
   width: 90rem;
