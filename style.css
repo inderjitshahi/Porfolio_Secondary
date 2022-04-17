@@ -246,8 +246,8 @@ cursor: pointer;
 
 /* Animated Circles */
 .main-circle {
-  width: 50rem;
-  height: 50rem;
+  width: 40rem;
+  height: 40rem;
   position:absolute;
   overflow: hidden;
   border-radius: 500%;
@@ -255,8 +255,18 @@ cursor: pointer;
   /* position: relative; */
 }
 .main-circle:hover{
-  width: 70rem;
-  height: 70rem;
+  width: 50rem;
+  height: 50rem;
+}
+.main-circle img {
+  width: 80rem;
+  height: 80rem;
+  mix-blend-mode: hard-light;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition:left 2s,top 2s;
+  /* mix-blend-mode: luminosity; */
 }
 .circles {
   position: absolute;
@@ -309,16 +319,7 @@ cursor: pointer;
   border: 0.5rem double rgb(0, 94, 255);
     margin-right: -10rem;
 }
-.main-circle img {
-  width: 90rem;
-  height: 90rem;
-  mix-blend-mode: hard-light;
-  position: relative;
-  top: 0;
-  left: 0;
-  transition:left 2s,top 2s;
-  /* mix-blend-mode: luminosity; */
-}
+
 /* End of Animated Circles */
 
 /* Featured Text */
