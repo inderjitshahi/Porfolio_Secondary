@@ -1,3 +1,5 @@
+
+
 /**********  Mouse Cirlcle  ******************/
 const mouseCircle = document.querySelector(".mouse-circle");
 const mouseDot = document.querySelector(".mouse-dot");
@@ -68,19 +70,19 @@ mainBtns.forEach((mainBtn) => {
 
 
 /************navigation ***************************/
-const menuIcon=document.querySelector(".menu-icon");
-const navbar=document.querySelector(".navbar");
+const menuIcon = document.querySelector(".menu-icon");
+const navbar = document.querySelector(".navbar");
 
-document.addEventListener("scroll",()=>{
+document.addEventListener("scroll", () => {
   menuIcon.classList.add("show-menu-icon");
   navbar.classList.add("hide-navbar");
   //window is scrolled up 
-  if(window.scrollY===0){
+  if (window.scrollY === 0) {
     menuIcon.classList.remove("show-menu-icon");
     navbar.classList.remove("hide-navbar");
   }
 });
-menuIcon.addEventListener("click",()=>{
+menuIcon.addEventListener("click", () => {
   menuIcon.classList.remove("show-menu-icon");
   navbar.classList.remove("hide-navbar");
 });
@@ -117,24 +119,27 @@ Array.from(aboutMeTextContent).forEach((charecter) => {
   });
 });
 
-console.log(aboutMeTextContent);
+
 /***********End of About me text *******************/
 
-/**********  Projects **********/
+
+
+/**********  Projects ******************************/
 const projects = document.querySelectorAll(".project");
 projects.forEach((project) => {
   project.addEventListener("mouseenter", () => {
-    project.firstElementChild.style.top = `-${
-      project.firstElementChild.offsetHeight - project.offsetHeight + 20
-    }px`;
+    project.firstElementChild.style.top = `-${project.firstElementChild.offsetHeight - project.offsetHeight + 20
+      }px`;
   });
   project.addEventListener("mouseleave", () => {
     project.firstElementChild.style.top = "2rem";
   });
 });
-/********** End of  Projects **********/
+/********** End of  Projects *********************/
 
-/***************** Services    ***************/
+
+/***************** Services    ********************/
+
 document.querySelectorAll(".service-btn").forEach((service) => {
   service.addEventListener("click", (e) => {
     e.preventDefault();
@@ -150,9 +155,11 @@ document.querySelectorAll(".service-btn").forEach((service) => {
     service.firstElementChild.style.right = rightPosition;
   });
 });
+
 /****************** End of Services ************/
 
-/****************** Contact Form************/
+
+/****************** Contact Form ***************/
 
 const formHeading = document.querySelector(".form-heading");
 const formInputs = document.querySelectorAll(".contact-form-input");
@@ -172,17 +179,21 @@ formInputs.forEach((input) => {
     }, 300);
   });
 });
+
 /****************** End of Contact Form ************/
 
-/****************** Slide Show ************/
+/****************** Start Slide Show *********************/
+
 const slideshow = document.querySelector(".slideshow");
+
 setInterval(() => {
-  const firstIcon = slideshow.firstElementChild;
-  firstIcon.classList.add("faded-out");
 
   const thirdIcon = slideshow.children[3];
   thirdIcon.classList.add("light");
   thirdIcon.previousElementSibling.classList.remove("light");
+
+  const firstIcon = slideshow.children[0];
+  firstIcon.classList.add("faded-out"); //this transition need time for .5s, so wait for .5s uisng setTimeout
   setTimeout(() => {
     slideshow.removeChild(firstIcon);
     slideshow.appendChild(firstIcon);
@@ -190,5 +201,13 @@ setInterval(() => {
       firstIcon.classList.remove("faded-out");
     }, 500);
   }, 500);
+
 }, 3000);
+
 /****************** End of Slide Show ************/
+setTimeout(() => {
+  console.log("start1");
+  setTimeout(()=>{
+    console.log("start2");
+  },1000)
+}, 1000);
